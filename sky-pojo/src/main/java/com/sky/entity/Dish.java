@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -25,7 +26,7 @@ public class Dish implements Serializable {
     private String name;
 
     //菜品分类id
-    private Long categoryId;
+    private Long category_id;
 
     //菜品价格
     private BigDecimal price;
@@ -39,12 +40,12 @@ public class Dish implements Serializable {
     //0 停售 1 起售
     private Integer status;
 
-    private LocalDateTime createTime;
+    private LocalDateTime create_time;
 
-    private LocalDateTime updateTime;
+    private LocalDateTime update_time;
 
-    private Long createUser;
+    private Long create_user;
 
-    private Long updateUser;
+    private Long update_user;
 
 }
