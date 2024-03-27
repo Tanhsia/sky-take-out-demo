@@ -30,14 +30,14 @@ public class Category implements Serializable {
     private Integer status;
 
     //创建时间
-    private LocalDateTime createTime;
+    private LocalDateTime create_time;
 
     //更新时间
-    private LocalDateTime updateTime;
+    private LocalDateTime update_time;
 
     //创建人
-    private Long createUser;
+    private Long create_user;
 
     //修改人
-    private Long updateUser;
+    private Long update_user;
 }

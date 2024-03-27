@@ -4,7 +4,7 @@
 <mapper namespace="com.sky.mapper.CategoryMapper">
 
     <select id="pageQuery" resultType="com.sky.entity.Category">
-        select * from category
+        select * from sky_take_out.category
         <where>
             <if test="name != null and name != ''">
                 and name like concat('%',#{name},'%')
@@ -17,7 +17,7 @@
     </select>
 
     <update id="update" parameterType="Category">
-        update category
+        update sky_take_out.category
         <set>
             <if test="type != null">
                 type = #{type},
@@ -31,18 +31,18 @@
             <if test="status != null">
                 status = #{status},
             </if>
-            <if test="updateTime != null">
-                update_time = #{updateTime},
+            <if test="update_time != null">
+                update_time = #{update_time},
             </if>
-            <if test="updateUser != null">
-                update_user = #{updateUser}
+            <if test="update_user != null">
+                update_user = #{update_user}
             </if>
         </set>
         where id = #{id}
     </update>
 
     <select id="list" resultType="Category">
-        select * from category
+        select * from sky_take_out.category
         where status = 1
         <if test="type != null">
             and type = #{type}

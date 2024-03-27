@@ -22,7 +22,7 @@ public class Setmeal implements Serializable {
     private Long id;
 
     //分类id
-    private Long categoryId;
+    private Long category_id;
 
     //套餐名称
     private String name;
@@ -39,11 +39,11 @@ public class Setmeal implements Serializable {
     //图片
     private String image;
 
-    private LocalDateTime createTime;
+    private LocalDateTime create_time;
 
-    private LocalDateTime updateTime;
+    private LocalDateTime update_time;
 
-    private Long createUser;
+    private Long create_user;
 
-    private Long updateUser;
+    private Long update_user;
 }
